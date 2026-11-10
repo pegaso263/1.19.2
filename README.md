@@ -1,2 +1,0 @@
-# obsidian-evo-mod
-mod
