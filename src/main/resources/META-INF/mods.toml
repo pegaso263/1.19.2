@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="obsidianevo"
+version="1.0.0"
+displayName="Obsidian Evolution Mod"
+description='''
+Armadura y Espada de Obsidiana Evolutiva adaptadas para Minecraft 1.19.2 (Compatible con Cisco's RPG).
+'''
+
+[[dependencies.obsidianevo]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.obsidianevo]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
