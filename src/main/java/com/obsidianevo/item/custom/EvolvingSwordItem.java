@@ -195,7 +195,7 @@ public class EvolvingSwordItem extends SwordItem {
                                     serverLevel.addFreshEntity(lightning);
                                 }
                                 target.invulnerableTime = 0;
-                                target.hurt(DamageSource.LIGHTNING_bolt, 10.0f + (getKills(stack) * 0.25f));
+                                target.hurt(DamageSource.LIGHTNING_BOLT, 10.0f + (getKills(stack) * 0.25f));
                             }
 
                             if (target.isDeadOrDying()) {
