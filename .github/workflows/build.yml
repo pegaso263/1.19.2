@@ -31,3 +31,4 @@ jobs:
       with:
         name: ObsidianEvo-1.19.2-Mod
         path: build/libs/*.jar
+        
