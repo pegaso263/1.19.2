@@ -87,7 +87,7 @@ public class EvolvingSwordItem extends SwordItem {
         if (!pAttacker.level.isClientSide() && pAttacker instanceof Player player) {
             int swordLevel = getSwordLevel(pStack);
             float bonus = getBonusDamage(pStack);
-            float totalHitDamage = 3.0f + bonus;
+            float totalHitDamage = 2.0f + bonus;
 
             // Aplicar daño evolutivo que ignora invulnerabilidad de ticks y armadura pesada
             if (bonus > 0) {
@@ -228,12 +228,12 @@ public class EvolvingSwordItem extends SwordItem {
         pTooltipComponents.add(Component.literal("Daño Evolutivo Extra: +" + String.format("%.2f", bonus)).withStyle(ChatFormatting.RED));
 
         pTooltipComponents.add(Component.literal("--- Habilidades Desbloqueadas ---").withStyle(ChatFormatting.GRAY));
-        pTooltipComponents.add(Component.literal("• Nv.1 (0-15): Robo de Vida (20%)").withStyle(ChatFormatting.GREEN));
-        pTooltipComponents.add(Component.literal("• Nv.2 (16-50): Daño y Rango en Área").withStyle(level >= 2 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
-        pTooltipComponents.add(Component.literal("• Nv.3 (51-80): Filo Ígneo").withStyle(level >= 3 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
-        pTooltipComponents.add(Component.literal("• Nv.4 (81-100): Onda de Aire [Clic Derecho]").withStyle(level >= 4 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
-        pTooltipComponents.add(Component.literal("• Nv.5 (101-200): Onda de Aire + Rayos").withStyle(level >= 5 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
-        pTooltipComponents.add(Component.literal("• Nv.6 (201+): Fuego Infernal + Aspecto Ígneo Máx.").withStyle(level >= 6 ? ChatFormatting.GOLD : ChatFormatting.DARK_GRAY));
+        pTooltipComponents.add(Component.literal("• Nv.1 (30): Robo de Vida (20%)").withStyle(ChatFormatting.GREEN));
+        pTooltipComponents.add(Component.literal("• Nv.2 (60): Daño y Rango en Área").withStyle(level >= 2 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
+        pTooltipComponents.add(Component.literal("• Nv.3 (100): Filo Ígneo").withStyle(level >= 3 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
+        pTooltipComponents.add(Component.literal("• Nv.4 (150): Onda de Aire [Clic Derecho]").withStyle(level >= 4 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
+        pTooltipComponents.add(Component.literal("• Nv.5 (300): Onda de Aire + Rayos").withStyle(level >= 5 ? ChatFormatting.GREEN : ChatFormatting.DARK_GRAY));
+        pTooltipComponents.add(Component.literal("• Nv.6 (300+): Fuego Infernal + Aspecto Ígneo Máx.").withStyle(level >= 6 ? ChatFormatting.GOLD : ChatFormatting.DARK_GRAY));
 
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
