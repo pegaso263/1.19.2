@@ -87,7 +87,7 @@ public class EvolvingSwordItem extends SwordItem {
         if (!pAttacker.level.isClientSide() && pAttacker instanceof Player player) {
             int swordLevel = getSwordLevel(pStack);
             float bonus = getBonusDamage(pStack);
-            float totalHitDamage = 2.0f + bonus;
+            float totalHitDamage = 1.0f + bonus;
 
             // Aplicar daño evolutivo que ignora invulnerabilidad de ticks y armadura pesada
             if (bonus > 0) {
