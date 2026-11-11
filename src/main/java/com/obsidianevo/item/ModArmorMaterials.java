@@ -11,7 +11,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    OBSIDIAN_EVO_ARMOR("mi_armadura", 100000, new int[]{3, 6, 8, 3}, 15,
+    OBSIDIAN_EVO_ARMOR("mi_armadura", 100000, new int[]{1, 2, 2, 2}, 15,
             SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(Items.OBSIDIAN));
 
     private final String name;
