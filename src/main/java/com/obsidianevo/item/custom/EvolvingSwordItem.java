@@ -60,11 +60,11 @@ public class EvolvingSwordItem extends SwordItem {
 
     public static int getSwordLevel(ItemStack stack) {
         int kills = getKills(stack);
-        if (kills >= 201) return 6;
-        if (kills >= 101) return 5;
-        if (kills >= 81) return 4;
-        if (kills >= 51) return 3;
-        if (kills >= 16) return 2;
+        if (kills >= 300) return 6;
+        if (kills >= 150) return 5;
+        if (kills >= 100) return 4;
+        if (kills >= 60) return 3;
+        if (kills >= 30) return 2;
         return 1;
     }
 
@@ -87,7 +87,7 @@ public class EvolvingSwordItem extends SwordItem {
         if (!pAttacker.level.isClientSide() && pAttacker instanceof Player player) {
             int swordLevel = getSwordLevel(pStack);
             float bonus = getBonusDamage(pStack);
-            float totalHitDamage = 8.0f + bonus;
+            float totalHitDamage = 3.0f + bonus;
 
             // Aplicar daño evolutivo que ignora invulnerabilidad de ticks y armadura pesada
             if (bonus > 0) {
