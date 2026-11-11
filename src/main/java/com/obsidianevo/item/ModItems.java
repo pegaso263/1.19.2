@@ -16,7 +16,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ObsidianEvoMod.MOD_ID);
 
     public static final RegistryObject<Item> OBSIDIAN_SWORD = ITEMS.register("obsidian_sword",
-            () -> new EvolvingSwordItem(ModToolTiers.OBSIDIAN_EVO, 6, -2.2f,
+            () -> new EvolvingSwordItem(ModToolTiers.OBSIDIAN_EVO, 1, -2.2f,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 
     public static final RegistryObject<Item> OBSIDIAN_HELMET = ITEMS.register("obsidian_helmet",
